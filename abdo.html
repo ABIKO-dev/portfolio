@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ABIKO-dev — Portfolio</title>
+  <title>ABIKO — Portfolio</title>
   <meta name="description" content="ABIKO-dev — Full‑stack developer. Portfolio showcasing projects, skills, and contact information." />
   <meta name="author" content="ABIKO-dev" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
-  <link rel="stylesheet" href="V1_ASSETS/styles.css">
+  <link rel="stylesheet" href="PORTFOLIO/styles.css">
       <script src="main.js"></script>
 
   <meta property="og:title" content="ABIKO-dev — Portfolio">
@@ -108,7 +108,23 @@ section h2{margin-top:0}
 .muted{color:var(--muted)}
 .small{font-size:.9rem}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+        .profile-photo {
+    /* 1. Set the size */
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Must match the width for a perfect circle/square */
 
+    /* 2. Make it a circle */
+    border-radius: 50%;
+
+    /* 3. Ensure the image covers the area without distortion */
+    object-fit: cover;
+
+    /* 4. Optional: Add a subtle border */
+    border: 3px solid #007bff; /* Change the color */
+
+    /* 5. Optional: Add space around the photo */
+    margin-bottom: 20px;
+}
     </style>
     <!-- css end here -->
      <!-- javascriprt started here -->
@@ -175,16 +191,20 @@ document.addEventListener('DOMContentLoaded', () => {
     <section id="home" class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
-          <h1>Hi, I’m <span class="accent">ABIKO</span>.</h1>
+          <h1>Hi, I’m <span class="accent">ABDO KEDIR</span>.</h1>
           <p class="lead">I build modern web apps and delightful user experiences — frontend, backend, and everything in between.</p>
           <p class="cta-row">
             <a class="btn" href="#projects">View Projects</a>
             <a class="btn btn-outline" href="#contact">Get in touch</a>
           </p>
         </div>
+        <img src="image/1000047909.jpg" alt="A professional headshot of [Your Name]" class="profile-photo">
+
         <div class="hero-code" aria-hidden="true">
-          <pre><code>// Example
+          <pre><code>
+            // Example
 const greet = (name) => `Hi, ${name}!`;
+
 console.log(greet('World'));</code></pre>
         </div>
       </div>
@@ -202,7 +222,7 @@ console.log(greet('World'));</code></pre>
         </div>
         <div class="about-stats">
           <ul>
-            <li><strong>1+</strong> years building web apps</li>
+            <li><strong>2+</strong> years building web apps</li>
             <li><strong>10+</strong> projects shipped</li>
             <li><strong>React / Node / TypeScript</strong></li>
           </ul>
@@ -301,15 +321,17 @@ console.log(greet('World'));</code></pre>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> ABIKO-dev — Built with ❤️</p>
+      <p>© <span id="year"></span> ABIKO-dev — Built with ❤️ OK</p>
       <nav class="footer-social" aria-label="Social links">
         <a href="#" target="_blank" rel="noopener">GitHub</a>
         <a href="#" target="_blank" rel="noopener">LinkedIn</a>
         <a href="#" target="_blank" rel="noopener">Twitter</a>
+        <!-- <a href="https://www.Linkedin.com/in//abdo-dawud?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">LinkedIn</a> -->
+
       </nav>
     </div>
   </footer>
 
-  <script src="assets/js/main.js" defer></script>
+  <script src="PORTFOLIO/main.js" defer></script>
 </body>
 </html>
