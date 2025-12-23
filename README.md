@@ -108,21 +108,22 @@ section h2{margin-top:0}
 .muted{color:var(--muted)}
 .small{font-size:.9rem}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+       //
         .profile-photo {
     /* 1. Set the size */
     width: 200px; /* Adjust as needed */
     height: 200px; /* Must match the width for a perfect circle/square */
-
+//
     /* 2. Make it a circle */
     border-radius: 50%;
 
-    /* 3. Ensure the image covers the area without distortion */
+ //   /* 3. Ensure the image covers the area without distortion */
     object-fit: cover;
 
-    /* 4. Optional: Add a subtle border */
+  //  /* 4. Optional: Add a subtle border */
     border: 3px solid #007bff; /* Change the color */
 
-    /* 5. Optional: Add space around the photo */
+  //  /* 5. Optional: Add space around the photo */
     margin-bottom: 20px;
 }
     </style>
