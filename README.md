@@ -11,7 +11,6 @@
   <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
   <link rel="stylesheet" href="PORTFOLIO/styles.css">
       <script src="main.js"></script>
-
   <meta property="og:title" content="ABIKO-dev — Portfolio">
   <meta property="og:description" content="ABIKO-dev — Full‑stack developer. Portfolio showcasing projects, skills, and contact information.">
   <meta property="og:type" content="website">
@@ -32,7 +31,6 @@
   font-size:16px;
   color-scheme: dark;
 }
-
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -44,9 +42,7 @@ body{
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
 }
-
 .container{max-width:var(--max-width);margin:0 auto;padding:2rem}
-
 .site-header{position:sticky;top:0;background:linear-gradient(180deg,rgba(11,18,32,0.8),rgba(11,18,32,0.6));backdrop-filter:blur(6px);z-index:60}
 .header-inner{display:flex;align-items:center;justify-content:space-between}
 .brand{font-weight:700;color:var(--text);text-decoration:none}
@@ -54,7 +50,6 @@ body{
 .primary-nav ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
 .primary-nav a{color:var(--muted);text-decoration:none;padding:.25rem .5rem;border-radius:6px}
 .primary-nav a:hover{color:var(--text);background:rgba(255,255,255,0.02)}
-
 /* Hero */
 .hero{padding:4rem 0 6rem}
 .hero-inner{display:grid;grid-template-columns:1fr 380px;gap:2rem;align-items:center}
@@ -63,10 +58,8 @@ body{
 .cta-row{margin-top:1.25rem}
 .btn{display:inline-block;background:var(--accent);color:#052022;padding:.6rem .9rem;border-radius:8px;text-decoration:none;font-weight:600}
 .btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
-
 /* Code block in hero */
 .hero-code pre{background:linear-gradient(180deg,#071428,#0b1530);padding:1rem;border-radius:10px;overflow:auto;color:#a7f3d0;font-size:0.9rem}
-
 /* Sections */
 section h2{margin-top:0}
 .about-grid{display:grid;grid-template-columns:1fr 220px;gap:1.5rem}
@@ -78,11 +71,9 @@ section h2{margin-top:0}
 .project-title{margin:.2rem 0}
 .project-desc{color:var(--muted);margin:.4rem 0}
 .project-meta{font-size:.85rem;color:var(--muted);}
-
 /* Skills */
 .skill-list{display:flex;flex-wrap:wrap;gap:.75rem;list-style:none;padding:0;margin:0}
 .skill-list li{background:rgba(255,255,255,0.03);padding:.5rem .75rem;border-radius:999px;color:var(--muted)}
-
 /* Contact */
 .contact-form{display:grid;gap:.75rem;max-width:640px}
 .contact-form label{display:block}
@@ -90,12 +81,10 @@ section h2{margin-top:0}
   width:100%;padding:.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text);
 }
 .form-actions{display:flex;gap:.5rem;align-items:center}
-
 /* Footer */
 .site-footer{padding:1.25rem 0;border-top:1px solid rgba(255,255,255,0.03);margin-top:3rem}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:1rem}
 .footer-social a{color:var(--muted);text-decoration:none;margin-left:.75rem}
-
 /* Small responsive tweaks */
 @media (max-width:900px){
   .hero-inner{grid-template-columns:1fr}
@@ -116,13 +105,10 @@ section h2{margin-top:0}
 //
     /* 2. Make it a circle */
     border-radius: 50%;
-
  //   /* 3. Ensure the image covers the area without distortion */
     object-fit: cover;
-
   //  /* 4. Optional: Add a subtle border */
     border: 3px solid #007bff; /* Change the color */
-
   //  /* 5. Optional: Add space around the photo */
     margin-bottom: 20px;
 }
@@ -135,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Year in footer
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
-
   // Mobile nav toggle
   const navToggle = document.getElementById('nav-toggle');
   const nav = document.getElementById('primary-nav');
@@ -147,7 +132,6 @@ document.addEventListener('DOMContentLoaded', () => {
       nav.setAttribute('aria-hidden', String(open));
     });
   }
-
   // Project filter
   const filter = document.getElementById('project-filter');
   const list = document.getElementById('project-list');
@@ -200,17 +184,14 @@ document.addEventListener('DOMContentLoaded', () => {
           </p>
         </div>
         <img src="image/1000047909.jpg" alt="A professional headshot of [Your Name]" class="profile-photo">
-
         <div class="hero-code" aria-hidden="true">
           <pre><code>
             // Example
 const greet = (name) => `Hi, ${name}!`;
-
 console.log(greet('World'));</code></pre>
         </div>
       </div>
     </section>
-
     <section id="about" class="about container">
       <h2>About</h2>
       <div class="about-grid">
@@ -230,7 +211,6 @@ console.log(greet('World'));</code></pre>
         </div>
       </div>
     </section>
-
     <section id="projects" class="projects container">
       <h2>Projects</h2>
       <p class="muted">A few selected projects. Replace these with your own work.</p>
@@ -244,7 +224,6 @@ console.log(greet('World'));</code></pre>
           </select>
         </label>
       </div>
-
       <div id="project-list" class="project-list">
         <!-- Project card 1 -->
         <article class="project-card" data-type="fullstack">
@@ -256,7 +235,6 @@ console.log(greet('World'));</code></pre>
             <p><a class="link" href="#" target="_blank" rel="noopener">View code</a></p>
           </div>
         </article>
-
         <!-- Project card 2 -->
         <article class="project-card" data-type="frontend">
           <div class="project-thumb" aria-hidden="true"></div>
@@ -267,7 +245,6 @@ console.log(greet('World'));</code></pre>
             <p><a class="link" href="#" target="_blank" rel="noopener">Live demo</a></p>
           </div>
         </article>
-
         <!-- Project card 3 -->
         <article class="project-card" data-type="backend">
           <div class="project-thumb" aria-hidden="true"></div>
@@ -280,7 +257,6 @@ console.log(greet('World'));</code></pre>
         </article>
       </div>
     </section>
-
     <section id="skills" class="skills container">
       <h2>Skills</h2>
       <p class="muted">Technologies I use regularly.</p>
@@ -293,11 +269,9 @@ console.log(greet('World'));</code></pre>
         <li>CI/CD, Docker, Cloud</li>
       </ul>
     </section>
-
     <section id="contact" class="contact container">
       <h2>Contact</h2>
       <p>Want to work together? Send a short message and I’ll get back to you.</p>
-
       <form id="contact-form" class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
         <label>
           Name
@@ -328,7 +302,6 @@ console.log(greet('World'));</code></pre>
         <a href="#" target="_blank" rel="noopener">LinkedIn</a>
         <a href="#" target="_blank" rel="noopener">Twitter</a>
         <!-- <a href="https://www.Linkedin.com/in//abdo-dawud?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">LinkedIn</a> -->
-
       </nav>
     </div>
   </footer>
